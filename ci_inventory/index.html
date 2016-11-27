@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta content='http://www.tobiweb.id/2016/01/sistem-informasi-inventory-dengan.html' property='og:url'/>
+		<meta content='Sistem Informasi Inventory dengan Framework CodeIgniter' property='og:title'/>
+		<meta content='Sistem Informasi Inventory dengan Framework CodeIgniter  Selamat berkunjung sobat semuanya, kali ini saya akan share source code ya...' property='og:description'/>
+		<meta content='https://4.bp.blogspot.com/-Z4JoLSD_mF4/WCiGoTJwP7I/AAAAAAAABrE/ukfIaqIKe9gTgAs2inSPeNE3YlSR3aScgCLcB/w1200-h630-p-nu/awesome2.png' property='og:image'/>
+		<title>Sistem Informasi Inventory dengan Framework CodeIgniter ~ Tobi Web | Programming Blog - PHP, Codeigniter, Magento, Laravel, Android</title>
+		<meta content='Tobi Web ID Tempatnya Tutorial dan source code Toko Online, Source Code Aplikasi PHP, Berbasis PHP dan MySQl, Source code CodeIgniter, Pengelolaan Data dengan Codeigniter, Contoh Program dengan PHP, Source Code eCommerce, Source Code dengan Laravel, cek source code website, source code toko online, source code toko online dengan php mysql, tutorial magento, ecommerce magento, plugin magento, toko online magento, Membuat toko online magento, tutorial toko online magento' name='keywords'/>
+		<a href='https://plus.google.com/u/0/102340795114056719423/about?rel=author' title='author+'></a>
+		<a href='https://plus.google.com/u/0/102340795114056719423' rel='me' title='google+'></a>
+		<link href='https://plus.google.com/u/0/102340795114056719423' rel='publisher'/>
+		<link href='https://plus.google.com/u/0/102340795114056719423' rel='author'/>
+		<meta content='F9EC9D9A1B05678A21EE139F7CC3967B' name='msvalidate.01'/>
+		<meta content='_UeuMm_uhYPIATq0irX2ZyGMq_2kUzT9DLViWadfU_s' name='google-site-verification'/>
+		<meta content='_bGnwewh8ZedLjN5-QX1LkQBLFM' name='alexaVerifyID'/>
+		<meta content='6f9bb65649e3c501' name='yandex-verification'/>
+		<meta content='Indonesia' name='geo.placename'/>
+		<meta content='Tobi Muhamad' name='Author'/>
+		<meta content='general' name='rating'/>
+		<meta content='id' name='geo.country'/>
+		<meta content='index,follow' name='robots'/>
+		<meta content='never' name='expires'/>
+		<meta content='always' name='revisit'/>
+		<meta content='global' name='distribution'/>
+		<meta content='blogger' name='generator'/>
+		<meta content='general' name='rating'/>
+		<meta content='true' name='MSSmartTagsPreventParsing'/>
+		<meta content='index, follow' name='googlebot'/>
+		<meta content='follow, all' name='Googlebot-Image'/>
+		<meta content='follow, all' name='msnbot'/>
+		<meta content='follow, all' name='Slurp'/>
+		<meta content='follow, all' name='ZyBorg'/>
+		<meta content='follow, all' name='Scooter'/>
+		<meta content='all' name='spiders'/>
+		<meta content='all' name='WEBCRAWLERS'/>
+		<meta content='aeiwi, alexa, alltheWeb, altavista, aol netfind, anzwers, canada, directhit, euroseek, excite, overture, go, google, hotbot. infomak, kanoodle, lycos, mastersite, national directory, northern light, searchit, simplesearch, Websmostlinked, webtop, what-u-seek, aol, yahoo, webcrawler, infoseek, excite, magellan, looksmart, bing, cnet, googlebot' name='search engines'/>
+		<meta content='Tobi Web' property='og:site_name'/>
+		<meta content='1679821632274919' property='fb:app_id'/>
+		<meta content='1679821632274919' property='fb:admins'/>
+		<meta content='en_US' property='og:locale'/>
+		<meta content='en_GB' property='og:locale:alternate'/>
+		<meta content='id_ID' property='og:locale:alternate'/>
+		<meta content='summary' name='twitter:card'/>
+		<meta content='Tobi Web ID' name='twitter:title'/>
+		<meta content='@tobiwebid' name='twitter:site'/>
+		<meta content='@tobiwebid' name='twitter:creator'/>
+
+
+
+		<!-- animate css -->
+		<link rel="stylesheet" href="css/animate.min.css">
+		<!-- bootstrap css -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- font-awesome -->
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<!-- google font -->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,700,800' rel='stylesheet' type='text/css'>
+
+		<!-- custom css -->
+		<link rel="stylesheet" href="css/templatemo-style.css">
+
+	</head>
+	<body>
+		<!-- start preloader -->
+		<div class="preloader">
+			<div class="sk-spinner sk-spinner-rotating-plane"></div>
+    	 </div>
+		<!-- end preloader -->
+		<!-- start navigation -->
+		<nav class="navbar navbar-default navbar-fixed-top templatemo-nav" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="icon icon-bar"></span>
+						<span class="icon icon-bar"></span>
+						<span class="icon icon-bar"></span>
+					</button>
+					<a href="dev.tobiwebid/ci_inventory" class="navbar-brand">CI Inventory</a>
+				</div>
+				<div class="collapse navbar-collapse">
+					<ul class="nav navbar-nav navbar-right text-uppercase">
+						<li><a href="#home">Home</a></li>
+						<li><a href="#feature">Features</a></li>
+						<li><a href="#pricing">Pricing</a></li>
+						<li><a href="#download">Demo</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- end navigation -->
+		<!-- start home -->
+		<section id="home">
+			<div class="overlay">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-1"></div>
+						<div class="col-md-10 wow fadeIn" data-wow-delay="0.3s">
+							<h1 class="text-upper">Sistem Informasi Inventory dengan Framework CodeIgniter</h1>
+							<p class="tm-white">CI Inventory ialah sistem informasi stok data yang fully Responsive, Clean Design, Modern, Mudah untuk digunakan dan dikembangakan. Di buat dengan menggunakan HTML5 &amp; CSS3, Bootstrap, Font Awesome, dan Framework Codeigniter.
+							<img src="https://4.bp.blogspot.com/-Z4JoLSD_mF4/WCiGoTJwP7I/AAAAAAAABrE/ukfIaqIKe9gTgAs2inSPeNE3YlSR3aScgCLcB/s640/awesome2.png" class="img-responsive" alt="home img">
+						</div>
+						<div class="col-md-1"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- end home -->
+		<!-- start divider -->
+		<section id="divider">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 wow fadeInUp templatemo-box" data-wow-delay="0.3s">
+						<i class="fa fa-laptop"></i>
+						<h3 class="text-uppercase">RESPONSIVE LAYOUT</h3>
+						<p>Sistem Informasi Inventory ini dibanguan dengan Template AdminLTE yang Responsive dan Modern.</p>
+					</div>
+					<div class="col-md-4 wow fadeInUp templatemo-box" data-wow-delay="0.3s">
+						<i class="fa fa-twitter"></i>
+						<h3 class="text-uppercase">BOOTSTRAP</h3>
+						<p>Dibangun dengan menggunakan Bootstrap, sehingga tampil apik dan mudah untuk di kembangakan lagi.</p>
+					</div>
+					<div class="col-md-4 wow fadeInUp templatemo-box" data-wow-delay="0.3s">
+						<i class="fa fa-users"></i>
+						<h3 class="text-uppercase">Multi User</h3>
+						<p>Sistem Informasi ini bisa diakses oleh beberapa user sekaligus, seperti Administrator, Manager dan Operator. </p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- end divider -->
+
+		<!-- start feature -->
+		<section id="feature">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 wow fadeInLeft" data-wow-delay="0.6s">
+						<h2 class="text-uppercase">Software Features</h2>
+						<p>Aplikasi ini bisa dijadikan referensi untuk Tugas Akhir dan Skripsi dan juga bagi anda yang mempunyai usaha di bidang pengolahan stok data.</p>
+						<p><span>
+						<i class="fa fa-mobile"></i>
+						</span>
+						Aplikasi ini bisa diakses melalui Smartphone anda, Anda bisa mengakses laporan dimanapun anda berada.</p>
+						<p><span><i class="fa fa-code"></i></span>Anda akan mendapatkan source code dan database lengkap serta BONUS menarik.</p>
+					</div>
+					<div class="col-md-6 wow fadeInRight" data-wow-delay="0.6s">
+						<img src="https://1.bp.blogspot.com/-dIX3MmI1OIU/WCiIUUKQBQI/AAAAAAAABrc/TBws7BeQBl4HYwaL-WWzm--LnJ76ZtzswCLcB/s640/CI%2BStock%2B%2B%2BSelamat%2BDatang.png" class="img-responsive" alt="feature img">
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- end feature -->
+
+		<!-- start feature1 -->
+		<section id="feature1">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+						<img src="https://3.bp.blogspot.com/-poNO5K9i75Q/WCiITxyOb3I/AAAAAAAABrU/IW-pBAvgKuEREhGJkO9ls5hPTa61SEcTACLcB/s640/CI%2BStock%2B%2B%2BInput%2BData%2BMasuk.png" class="img-responsive" alt="feature img">
+					</div>
+					<div class="col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+						<h2 class="text-uppercase">Fitur lainnya</h2>
+						<p>Berikut ini beberapa menu yang ada pada aplikasi inventori ini :</p>
+<p>1. BERANDA / DASHBOARD</p><p>
+2. MASTER
+</p><p>
+3. TRANSAKSI
+</p><p>
+4. LAPORAN 
+</p><p>
+5. SETTING
+</p><p>
+6. LOGOUT Dan PROFILE
+</p><p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- end feature1 -->
+
+		<!-- start pricing -->
+		<section id="pricing">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 wow bounceIn">
+						<h2 class="text-uppercase">Our Pricing</h2>
+					</div>
+					<div class="col-md-4 wow fadeIn" data-wow-delay="0.6s">
+						<div class="pricing text-uppercase">
+							<div class="pricing-title">
+								<h4>Basic Plan</h4>
+								<p>Rp. 500K</p>
+							</div>
+							<ul>
+								<li>Full Source Code</li>
+								<li>Full Database</li>
+								<li>Support Konfigurasi</li>
+								<li>Support Error</li>
+							</ul>
+							<a href="#contact" class="btn btn-primary text-uppercase">Order</a>
+						</div>
+					</div>
+					<div class="col-md-4 wow fadeIn" data-wow-delay="0.6s">
+						<div class="pricing active text-uppercase">
+							<div class="pricing-title">
+								<h4>Business Plan</h4>
+								<p>Rp. 1 Juta</p> 
+							</div>
+							<ul>
+								<li>Full Source Code</li>
+								<li>Full Database</li>
+								<li>Support Konfigurasi</li>
+								<li>Support Error</li>
+								<li>Install Teamviewer</li>
+							</ul>
+							<a href="#contact" class="btn btn-primary text-uppercase">Order</a>
+						</div>
+					</div>
+					<div class="col-md-4 wow fadeIn" data-wow-delay="0.6s">
+						<div class="pricing text-uppercase">
+							<div class="pricing-title">
+								<h4>Pro Plan</h4>
+								<p>Kontak</p> 
+							</div>
+							<ul>
+								<li>Penambahan Modul</li>
+								<li>Full Source Code</li>
+								<li>Full Database</li>
+								<li>Support Konfigurasi</li>
+								<li>Support Error</li>
+								<li>Install Teamviewer</li>
+							</ul>
+							<a href="#contact" class="btn btn-primary text-uppercase">Order</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- end pricing -->
+
+		<!-- start download -->
+		<section id="download">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 wow fadeInLeft" data-wow-delay="0.6s">
+						<h2 class="text-uppercase">Demo</h2>
+						<p>Jika anda berminat untuk melihat demonya silahkan bisa kontak kami. </p>
+						<a href="#contact" class="btn btn-primary text-uppercase"><i class="fa fa-paper-plane"></i> Kontak</a>
+					</div>
+					<div class="col-md-6 wow fadeInRight" data-wow-delay="0.6s">
+						<img src="https://3.bp.blogspot.com/-5usZ-dHz2vU/WCiIUXHSUqI/AAAAAAAABrY/Z8sIS8v44DYBe_k3CuKt7Ht4XXmpi_G_QCLcB/s640/Laporan.png" class="img-responsive" alt="feature img">
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- end download -->
+
+		<!-- start contact -->
+		<section id="contact">
+			<div class="overlay">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 wow fadeInUp" data-wow-delay="0.6s">
+							<h2 class="text-uppercase">Kontak Kami</h2>
+							<p>Untuk mengetahui lebih lanjut seperti proses informasi pembayaran, melihat demo, metode pengiriman dan BONUS apa saja yang didapat bisa hubungi kami dikontak berikut ini  </p>
+							<address>
+								<p><i class="fa fa-phone"></i> Sms/Wa : 087830390977</p>
+								<p><i class="fa fa fa-comments"></i> BBM : D2F95DF2</p>								
+								<p><i class="fa fa-envelope-o"></i> Email : info@tobiweb.id</p>
+							</address>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- end contact -->
+
+		<!-- start footer -->
+		<footer>
+			<div class="container">
+				<div class="row">
+					<p>Copyright © 2016 Tobi Web Indonesia</p>
+				</div>
+			</div>
+		</footer>
+		<!-- end footer -->
+        
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/wow.min.js"></script>
+		<script src="js/jquery.singlePageNav.min.js"></script>
+		<script src="js/custom.js"></script>
+	</body>
+</html>
